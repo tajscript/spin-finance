@@ -1,0 +1,918 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.html {
+  @apply
+
+  scroll-smooth
+}
+
+body {
+  @apply
+
+  p-0
+  m-0
+  box-border
+  overflow-x-hidden
+}
+
+/* desktop nav */
+
+.desktop {
+  @apply
+
+  fixed
+  h-16
+  w-full
+  bg-bgGreen
+  font-mont
+  z-50
+}
+
+.navbar {
+  @apply
+
+  relative
+  bg-transparent
+  flex
+  flex-row
+  items-center
+  justify-between
+  h-full
+  w-full
+  px-20
+}
+
+.logo {
+  @apply
+
+  text-[#fff]
+  text-2xl
+  font-semibold
+}
+
+.logo span {
+  @apply
+
+  text-specialYellow
+}
+
+.nav-menu {
+  @apply
+
+  flex
+  flex-row
+  text-[#fff]
+  space-x-8
+  text-sm
+}
+
+.login-signup {
+  @apply
+
+  relative
+  space-x-3
+}
+
+.logup {
+  @apply
+
+  text-specialYellow
+  w-24
+  h-8
+  shadow-md
+  shadow-black
+  rounded-sm
+}
+
+/* mobile nav */
+
+.mobile {
+  @apply
+
+  bg-bgGreen
+  font-mont
+  w-full
+  h-full
+  overflow-y-hidden
+}
+
+.mobile-navbar {
+  @apply
+
+  w-full
+  p-5
+  flex
+  flex-row
+  justify-between
+  items-center
+  bg-transparent
+  text-[#fff]
+}
+
+.mobile-logo {
+  @apply
+  
+  text-[20px]
+  text-[#fff]
+  font-semibold
+}
+
+.mobile-logo p a span {
+  @apply
+
+  text-specialYellow
+}
+
+.nav-toggle {
+  @apply
+
+  text-3xl
+}
+
+.hamburger {
+  @apply
+
+  transition-all
+  duration-500
+  ease-linear
+}
+
+.mobile-nav-menu {
+  @apply
+
+  absolute
+  top-[75px]
+  left-0
+  bg-bgMilk
+  text-[#000]
+  w-full
+  h-[100vh]
+  px-5
+  pt-48
+  pb-20
+  space-y-6
+  overflow-hidden
+  z-50
+}
+
+.open {
+  @apply
+
+  -translate-y-0
+  ease-linear
+  transition-all
+  duration-500
+}
+
+.close {
+  @apply
+
+  -translate-y-[120%]
+  ease-linear
+  transition-all
+  duration-500
+}
+
+.mobile-nav-menu li {
+  @apply
+
+  text-2xl
+  font-medium
+}
+
+.mobile-login-signup {
+  @apply
+
+  flex
+  flex-col
+  space-y-6
+  items-start
+  pt-8
+}
+
+.mobile-logup {
+  @apply
+
+  bg-bgGreen
+  w-36
+  rounded-sm
+  h-10
+  text-specialYellow
+}
+
+/* Bank Section */
+.bank-container {
+  @apply
+
+  text-[#fff]
+  font-mont
+  bg-bgGreen
+  py-12
+  px-5
+  mx-auto
+  lg:pt-48
+  lg:px-20
+}
+
+.bank-container > h4 {
+  @apply
+
+  font-bold
+  absolute
+  text-8xl
+  top-[340px]
+  left-[30px]
+  opacity-5
+  md:text-[14rem]
+  md:left-[90px]
+  lg:text-[18rem]
+  lg:left-[24rem]
+}
+
+.bank-compound {
+  @apply
+
+  flex
+  w-full
+  flex-col
+  items-center
+  space-x-4
+  justify-center
+  lg:flex-row
+}
+
+.bank-left {
+  @apply
+
+  w-full
+  md:w-[65%]
+}
+
+.bank-right {
+  @apply
+
+  w-full
+  z-10
+  md:w-auto
+}
+
+h1 {
+  @apply
+
+  text-2xl
+  font-bold
+  md:text-4xl
+  xl:text-5xl
+}
+
+.bank-left > p {
+  @apply
+
+  w-full
+  py-4
+  text-sm
+  text-[#ddd]
+  md:text-[17px]
+  md:py-6
+  lg:py-10
+}
+
+.bank-request {
+  @apply
+
+  flex
+  flex-row
+  space-x-6
+  mb-16
+}
+
+.bank-request > button {
+  @apply
+
+  w-36
+  bg-specialLemon
+  text-[#000]
+  h-10
+  rounded-sm
+  cursor-pointer
+}
+
+.mouse-container {
+  @apply
+
+  flex
+  justify-center
+  items-center
+  space-x-2
+}
+
+.mouse-icon {
+  @apply
+
+  bg-transparent
+  border
+  w-10
+  h-10
+  rounded-full
+  flex
+  items-center
+  justify-center
+  cursor-pointer
+  border-specialLemon
+}
+
+.mouse-container i {
+  @apply
+
+  text-lightGreen
+}
+
+.mouse-container > p {
+  @apply
+
+  text-sm
+  text-[#ddd]
+}
+
+.bank-img {
+  @apply
+
+  w-full
+  flex
+  flex-row
+  justify-center
+  space-x-6
+  md:space-x-8
+}
+
+.bank-icons {
+  @apply
+
+  flex
+  mt-10
+  items-center
+  md:space-x-2
+  md:mt-16
+  xl:mt-24
+  lg:mb-12
+  lg:space-x-0
+}
+
+.flex-container {
+  @apply
+
+  w-full
+  items-center
+  flex-row
+  md:flex
+  lg:w-[50%]
+}
+
+.mobile-icon {
+  @apply
+
+  flex
+  items-center
+  justify-center
+  space-y-0
+}
+
+
+.bank-icons-container {
+  @apply
+
+  w-full
+  flex
+  flex-row
+  space-x-3
+  items-center
+  justify-center
+  lg:space-x-6
+}
+
+.bank-icons-circle {
+  @apply
+
+  w-10
+  h-10
+  bg-iconBg
+  rounded-2xl
+  border
+  flex
+  items-center
+  justify-center
+  md:h-12
+  md:w-12
+  md:rounded-3xl
+  lg:h-14
+  lg:w-14
+  xl:h-20
+  xl:w-20
+}
+
+.bank-icons-circle > i {
+  @apply
+
+  md:text-xl
+  lg:text-2xl
+  xl:text-3xl
+}
+
+.bank-icons-text > i {
+  @apply
+
+  text-lg
+  lg:text-2xl
+}
+
+.bank-icons-text > h5 {
+  @apply
+
+  text-sm
+  text-[#ddd]
+  font-semibold
+  md:text-base
+  lg:text-xl
+}
+
+.bank-icons-text > p {
+  @apply
+
+  text-[12px]
+  text-[#ddd]
+  md:text-sm
+}
+
+/* Payment Section */
+.payment-container {
+  @apply
+
+  bg-bgMilk
+  font-mont
+  py-10
+  px-5
+  md:py-16
+  lg:py-20
+  lg:px-20
+}
+
+.payment-container > h4 {
+  @apply
+
+  text-center
+  text-bgGreen
+  font-bold
+  text-xl
+  md:text-2xl
+  lg:text-3xl
+}
+
+.payment-center {
+  @apply
+
+  flex
+  flex-col
+  w-full
+  items-center
+  justify-center
+}
+
+.payment-circle {
+  @apply
+
+  w-[200px]
+  h-[200px]
+  bg-iconGreen
+  absolute
+  rounded-full
+  flex
+  items-center
+  justify-center
+}
+
+.payment-center > img {
+  @apply
+
+  w-full
+  mx-auto
+  md:w-[50%]
+}
+
+.payment-animate {
+  @apply
+
+  flex
+  w-full
+  justify-between
+  items-center
+  text-2xl
+  md:text-3xl
+}
+
+.cup-icon {
+  @apply
+
+  absolute
+  top-[55rem]
+  bg-[#fff]
+  p-3
+  rounded-xl
+  text-iconOrange
+  shadow-2xl
+  shadow-gray-500
+  sm:top-[68rem]
+  md:p-5
+}
+
+.paypal-icon {
+  @apply
+
+  absolute
+  right-5
+  top-[55rem]
+  bg-[#fff]
+  p-3
+  text-bgGreen
+  rounded-xl
+  -rotate-45
+  shadow-2xl
+  shadow-gray-500
+  lg:right-20
+  sm:top-[68rem]
+  md:p-5
+}
+
+.visa-icon {
+  @apply
+
+  relative
+  bg-[#fff]
+  p-3
+  rounded-xl
+  -rotate-45
+  shadow-2xl
+  shadow-gray-500
+  text-[#2F9565]
+  md:p-5
+}
+
+.mastercard-icon {
+  @apply
+
+  relative
+  bg-[#fff]
+  p-3
+  rounded-xl
+  rotate-12
+  shadow-2xl
+  shadow-gray-500
+  text-red-400
+  md:p-5
+}
+
+/* Budget */
+
+.budget-container {
+  @apply
+
+  bg-bgDarkGrey
+  font-mont
+  flex
+  flex-col
+  items-center
+  py-10
+  px-5
+  md:flex-row
+  md:justify-between
+  md:py-16
+  lg:px-20
+}
+
+.budget-img {
+  @apply
+
+  w-full
+  flex
+  mb-5
+  items-center
+  justify-center
+  md:w-1/2
+  md:mb-0
+}
+
+.budget-img > img {
+  @apply
+  
+  w-full
+  sm:w-[70%]
+  md:w-[75%]
+}
+
+.budget-text {
+  @apply
+
+  w-full
+  md:w-1/2
+}
+
+.budget-text > h4 {
+  @apply
+
+  text-bgGreen
+  text-xl
+  font-bold
+  md:text-2xl
+  lg:text-3xl
+}
+
+.budget-text > p {
+  @apply
+
+  text-[#636363]
+  py-4
+  md:py-6
+  lg:py-8
+}
+
+.budget-text > button {
+  @apply
+
+  w-36
+  bg-bgGreen
+  text-[#fff]
+  h-10
+  rounded-sm
+  cursor-pointer
+}
+
+/* Work */
+
+.work-container {
+  @apply
+
+  bg-bgGreen
+  font-mont
+  flex
+  flex-col
+  text-[#ddd]
+  items-center
+  py-10
+  px-5
+  md:flex-row
+  md:justify-between
+  md:py-16
+  lg:px-20
+}
+
+.work-img {
+  @apply
+
+  w-full
+  flex
+  justify-center
+  items-center
+  lg:justify-start
+  md:w-[50%]
+}
+
+.work-img-container {
+  @apply
+
+  w-full
+  p-4
+  h-56
+  bg-linear
+  flex
+  flex-col
+  items-center
+  justify-center
+  text-center
+  rounded-2xl
+  shadow-2xl
+  shadow-[#FEC85B]
+  sm:w-[70%]
+  md:h-64
+}
+
+.work-img-container > h6 {
+  @apply
+
+  text-2xl
+  font-bold
+  pb-4
+  lg:text-3xl
+}
+
+.work-icons {
+  @apply
+
+  w-full
+  flex
+  flex-row
+  justify-between
+  items-center
+  mt-10
+  md:w-[50%]
+  md:mt-0
+}
+
+.work-item {
+  @apply
+
+  flex
+  flex-col
+  items-center
+  justify-center
+  space-y-10
+}
+
+.work-icon-container {
+  @apply
+
+  flex
+  flex-col
+  space-y-2
+  justify-center
+  items-center
+  xl:space-x-6
+  xl:flex-row
+}
+
+.work-icon {
+  @apply
+
+  bg-iconBg2
+  w-16
+  h-16
+  rounded-full
+  flex
+  items-center
+  justify-center
+  lg:w-20
+  lg:h-20
+}
+
+.work-icon > i {
+  @apply
+
+  text-xl
+  md:text-2xl
+  lg:text-3xl
+}
+
+.work-icon-text {
+  @apply
+
+  text-center
+}
+
+.work-icon-text > h5 {
+  @apply
+
+  md:text-lg
+  font-semibold
+}
+
+.work-icon-text > p {
+  @apply
+
+  text-sm
+}
+
+/* Learn */
+.learn-container {
+  @apply
+
+  bg-bgMilk
+  font-mont
+  flex
+  flex-col
+  items-center
+  py-10
+  px-5
+  md:flex-row
+  md:justify-between
+  md:py-16
+  lg:px-20
+}
+
+/* Footer */
+.footer-container {
+  @apply
+
+  bg-bgGreen
+  font-mont
+  flex
+  flex-col
+  justify-between
+  items-center
+  space-y-10
+  pt-10
+  pb-20
+  px-5
+  md:space-y-0
+  md:flex-row
+  md:py-16
+  lg:py-20
+  lg:px-20
+}
+
+.footer-text {
+  @apply
+
+  w-full
+  flex
+  flex-col
+  justify-center
+  md:w-[50%]
+}
+
+.footer-text > h4 {
+  @apply
+
+  pt-10
+  pb-3
+  text-[#fff]
+  text-xl
+  font-bold
+  lg:text-2xl
+}
+
+.footer-text > p {
+  @apply
+
+  text-[#ddd]
+  text-sm
+  md:text-base
+}
+
+.footer-icons {
+  @apply
+
+  flex
+  mt-5
+  flex-row
+  space-x-10
+}
+
+.footer-icon {
+  @apply
+
+  h-10
+  w-10
+  bg-specialYellow
+  rounded-full
+  cursor-pointer
+  flex
+  justify-center
+  items-center
+  text-[#fff]
+  md:h-14
+  md:w-14
+  md:text-xl
+}
+
+.footer-form {
+  @apply
+
+  w-full
+  md:w-[50%]
+}
+
+form {
+  @apply
+
+  flex
+  flex-col
+  space-y-6
+  justify-center
+  items-center
+}
+
+form > input {
+  @apply
+
+  w-full
+  h-12
+  p-2
+  bg-[#0F2F31]
+  text-[#ddd]
+  rounded-xl
+  focus:outline-none
+  md:w-[80%]
+}
+
+.button {
+  @apply
+
+  w-full
+  h-12
+  bg-specialYellow
+  text-bgGreen
+  rounded-xl
+  md:w-[80%]
+}
